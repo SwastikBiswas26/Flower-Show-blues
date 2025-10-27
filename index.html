@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blooming Flower Animation</title>
+
+    <!-- Optional: Smooth font rendering -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #000;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Prevent animation until loaded */
+      body.not-loaded * {
+        animation: none !important;
+        opacity: 0 !important;
+      }
+    </style>
+  </head>
+
+  <body class="not-loaded">
+    <div id="root"></div>
+
+    <!-- React entry point -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
